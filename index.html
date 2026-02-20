@@ -1,177 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aditya Maurya | Java Backend Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Aditya Maurya | Java Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+body{
+margin:0;
+background:#eaeaea;
+font-family:'Montserrat',sans-serif;
+color:#333;
 }
 
-body {
-    background: #f5f7fa;
-    color: #333;
+.resume{
+width:1100px;
+margin:40px auto;
+background:white;
+display:flex;
+box-shadow:0 0 25px rgba(0,0,0,0.08);
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #1f2937, #111827);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+/* LEFT SIDE */
+.left{
+width:32%;
+background:#f2f2f2;
+padding:40px 30px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    font-weight: 700;
+.name{
+font-size:42px;
+font-weight:300;
+line-height:48px;
+margin-bottom:15px;
 }
 
-.hero p {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.9;
+.role{
+font-size:16px;
+margin-bottom:30px;
+color:#555;
+border-bottom:2px solid #ccc;
+padding-bottom:15px;
 }
 
-/* Section */
-.section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 0 20px;
+.section-title{
+font-size:18px;
+margin-top:30px;
+margin-bottom:15px;
+font-weight:600;
 }
 
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #111827;
-    border-left: 5px solid #2563eb;
-    padding-left: 10px;
+.left p{
+font-size:14px;
+margin:8px 0;
 }
 
-/* Card */
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
+.left ul{
+padding-left:18px;
 }
 
-/* Skills Grid */
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+.left li{
+font-size:14px;
+margin-bottom:8px;
 }
 
-.skill-item {
-    background: #eef2ff;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: 500;
+/* RIGHT SIDE */
+.right{
+width:68%;
+padding:40px 50px;
 }
 
-/* Footer */
-.footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 60px;
+.right h2{
+font-size:20px;
+font-weight:600;
+margin-bottom:10px;
+border-bottom:2px solid #4a90e2;
+padding-bottom:8px;
+}
+
+.right p{
+font-size:14px;
+line-height:1.7;
+color:#444;
+}
+
+.job{
+margin-top:20px;
+}
+
+.job-title{
+font-weight:600;
+font-size:16px;
+}
+
+.date{
+float:right;
+font-size:13px;
+color:#666;
+}
+
+ul{
+padding-left:18px;
+}
+
+li{
+font-size:14px;
+margin-bottom:8px;
+color:#444;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-    <h1>Aditya Maurya</h1>
-    <p>Java Backend Developer | 3+ Years Experience</p>
-</div>
+<div class="resume">
 
-<div class="section">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-        Java Backend Developer with 3 years of experience in building scalable backend systems,
-        REST APIs and microservices using Java 8, Spring Boot and Hibernate.
-        Skilled in secure API design, Agile delivery, Git, MySQL, JUnit and Mockito
-        to deliver production-ready code.
-        </p>
-    </div>
-</div>
+<div class="left">
 
-<div class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <div class="skill-item">Core Java</div>
-        <div class="skill-item">Spring Boot</div>
-        <div class="skill-item">Hibernate JPA</div>
-        <div class="skill-item">Spring Security (JWT)</div>
-        <div class="skill-item">Microservices</div>
-        <div class="skill-item">MySQL</div>
-        <div class="skill-item">AWS EC2 & S3</div>
-        <div class="skill-item">JUnit & Mockito</div>
-        <div class="skill-item">Git</div>
-        <div class="skill-item">Redis</div>
-        <div class="skill-item">Swagger</div>
-        <div class="skill-item">Maven</div>
-    </div>
-</div>
+<div class="name">Aditya<br>Maurya</div>
+<div class="role">Java Backend Developer</div>
 
-<div class="section">
-    <h2>Experience</h2>
+<p><strong>Phone:</strong> 9919132374</p>
+<p><strong>Email:</strong> aditya.mry01@gmail.com</p>
+<p><strong>Location:</strong> Borivali, Mumbai</p>
 
-    <div class="card">
-        <h3>Java Backend Developer – Fable Fintech (Jul 2025 – Dec 2025)</h3>
-        <p>Developed secure REST APIs for banking modules including onboarding, loans, and transactions.
-        Implemented JWT-based Spring Security and optimized MySQL queries for high-volume processing.
-        Deployed microservices on AWS EC2 with S3 integration.</p>
-    </div>
+<div class="section-title">Skills</div>
+<ul>
+<li>Core Java / J2EE</li>
+<li>Spring Boot & Spring MVC</li>
+<li>Hibernate (ORM)</li>
+<li>Spring Security (JWT, RBAC)</li>
+<li>Microservices Architecture</li>
+<li>REST APIs</li>
+<li>MySQL & Redis</li>
+<li>AWS EC2 / S3</li>
+<li>Swagger / OpenAPI</li>
+<li>Postman</li>
+<li>JUnit & Mockito</li>
+<li>Git & Gitlab</li>
+<li>Exception Handling</li>
+<li>SQL Optimization</li>
+</ul>
 
-    <div class="card">
-        <h3>Software Engineer – Happiest Minds (Nov 2022 – Jul 2025)</h3>
-        <p>Built flight reservation backend system with authentication, booking, and payment workflows.
-        Integrated OTP, email notifications, and implemented RBAC security.
-        Improved performance through SQL tuning and API optimization.</p>
-    </div>
+<div class="section-title">Education</div>
+<p><strong>BCA in Computer Science</strong></p>
+<p>2020 – 2023</p>
+<p>Veer Bahadur Singh Purvanchal University</p>
 
 </div>
 
-<div class="section">
-    <h2>Projects</h2>
+<div class="right">
 
-    <div class="card">
-        <h3>Kotak Mahindra Bank – Banking Transaction System</h3>
-        <p>Backend system for managing inward and outward transactions with role-based access,
-        secure validation, and real-time updates.</p>
-    </div>
+<h2>About Me</h2>
+<p>
+Java Backend Developer with 3+ years of experience in building scalable backend systems,
+REST APIs and microservices using Java 8, Spring Boot and Hibernate.
+Experienced in banking and airline domains with strong focus on security,
+performance optimization and clean architecture.
+</p>
 
-    <div class="card">
-        <h3>Flight Reservation System</h3>
-        <p>Microservices-based backend for flight booking, seat selection, and ticket management
-        with secure login and AWS deployment.</p>
-    </div>
+<h2>Experience</h2>
+
+<div class="job">
+<div class="job-title">Fable Fintech <span class="date">Jul 2025 – Dec 2025</span></div>
+<p>Java Backend Developer</p>
+<ul>
+<li>Developed secure RESTful APIs for customer onboarding, loan processing and account management, improving reliability by 30%.</li>
+<li>Implemented Spring Security with JWT and Role-Based Authorization, reducing unauthorized access by 20%.</li>
+<li>Optimized MySQL queries and indexing, decreasing transaction latency by 35%.</li>
+<li>Integrated OTP-based verification and secure transaction validation workflows.</li>
+<li>Built KYC document upload & verification integrating AWS S3 for secure storage.</li>
+<li>Implemented centralized exception handling and structured logging using Logback.</li>
+<li>Collaborated in Agile teams converting business requirements into scalable microservices.</li>
+</ul>
+</div>
+
+<div class="job">
+<div class="job-title">Happiest Minds Technologies <span class="date">Nov 2022 – Jul 2025</span></div>
+<p>Software Engineer</p>
+<ul>
+<li>Developed REST APIs for flight search, booking, payment and cancellation modules.</li>
+<li>Implemented Spring Security authentication and role-based authorization.</li>
+<li>Integrated OTP, SMS and email notification services.</li>
+<li>Improved performance using SQL tuning and API response optimization (60% faster retrieval).</li>
+<li>Deployed microservices on AWS EC2 with S3 storage integration.</li>
+<li>Validated 50+ endpoints using Swagger and Postman.</li>
+<li>Refactored modules to improve maintainability and reduce production defects.</li>
+</ul>
+</div>
+
+<h2>Project Demonstration</h2>
+
+<div class="job">
+<p><strong>Fable Fintech – Kotak Mahindra Bank</strong></p>
+<p><strong>Technologies:</strong> Java 8, Spring Boot, Microservices, Hibernate JPA, MySQL, Redis, JWT, Logback</p>
+<p>
+Backend system for managing inward and outward banking transactions with secure validation,
+role-based access and real-time status updates.
+</p>
+</div>
+
+<div class="job">
+<p><strong>Flight Reservation System</strong></p>
+<p><strong>Technologies:</strong> Java 8, Spring Boot, Spring Security, REST API, MySQL, AWS</p>
+<p>
+Backend application supporting secure login, seat selection, booking workflows and automated notifications.
+</p>
+</div>
 
 </div>
 
-<div class="section">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: aditya.mry01@gmail.com</p>
-        <p>Phone: 9919132374</p>
-        <p>Location: Mumbai, India</p>
-    </div>
-</div>
-
-<div class="footer">
-    © 2026 Aditya Maurya | All Rights Reserved
 </div>
 
 </body>
