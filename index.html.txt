@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aditya Maurya | Java Backend Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+h2 {
+    color: #1f2937;
+}
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Aditya Maurya</h1>
+    <p>Java Backend Developer | 3.2 Years Experience</p>
+</div>
+
+<div class="section">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a Java Backend Developer with 3.2 years of experience in building secure and scalable RESTful APIs using Spring Boot and Hibernate. I have worked in banking and airline domains and focus on writing clean and efficient backend logic.</p>
+    </div>
+
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <p>Core Java, Java 8, Spring Boot, Hibernate JPA, Spring Security (JWT & OTP), MySQL, Microservices, AWS S3, Git, JUnit, Mockito</p>
+    </div>
+
+    <div class="card">
+        <h2>Experience</h2>
+        <p><strong>Java Backend Developer – Fable Fintech</strong></p>
+        <p>Worked on Delta Airline Project and Kotak Mahindra Banking Project. Developed secure REST APIs, handled database integration, and implemented authentication mechanisms.</p>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <p><strong>Flight Reservation System:</strong> Search, booking, and API development using Spring Boot.</p>
+        <p><strong>Banking CTS System:</strong> Secure inward and outward check processing APIs.</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: aditya.mry01@gmail.com</p>
+        <p>Phone: 9919132374</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Aditya Maurya | All Rights Reserved
+</div>
+
+</body>
+</html>
