@@ -13,15 +13,20 @@ font-family:'Montserrat',sans-serif;
 color:#333;
 }
 
-.resume{
+/* COMMON PAGE STYLE */
+.page{
 width:1100px;
 margin:40px auto;
 background:white;
-display:flex;
 box-shadow:0 0 25px rgba(0,0,0,0.08);
 }
 
-/* LEFT SIDE */
+/* PAGE 1 LAYOUT */
+.page1{
+display:flex;
+}
+
+/* LEFT */
 .left{
 width:32%;
 background:#f2f2f2;
@@ -50,11 +55,6 @@ margin-bottom:15px;
 font-weight:600;
 }
 
-.left p{
-font-size:14px;
-margin:8px 0;
-}
-
 .left ul{
 padding-left:18px;
 }
@@ -64,7 +64,7 @@ font-size:14px;
 margin-bottom:8px;
 }
 
-/* RIGHT SIDE */
+/* RIGHT */
 .right{
 width:68%;
 padding:40px 50px;
@@ -81,7 +81,6 @@ padding-bottom:8px;
 .right p{
 font-size:14px;
 line-height:1.7;
-color:#444;
 }
 
 .job{
@@ -106,75 +105,74 @@ padding-left:18px;
 li{
 font-size:14px;
 margin-bottom:8px;
-color:#444;
-}
-  .project-section{
-display:flex;
-margin-top:20px;
 }
 
-.project-left{
-width:35%;
-padding-right:20px;
+/* PAGE 2 FULL WIDTH */
+.page2{
+padding:50px 70px;
 }
 
-.project-right{
-width:65%;
+.page2 h2{
+font-size:22px;
+font-weight:600;
+border-bottom:2px solid #4a90e2;
+padding-bottom:10px;
+margin-bottom:20px;
 }
 
-.project-left p{
-margin:6px 0;
+.page2 p{
 font-size:14px;
+line-height:1.7;
 }
 
-.project-right ul{
-margin-top:5px;
+@media print{
+.page{
+page-break-after:always;
+box-shadow:none;
+margin:0;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="resume">
+<!-- PAGE 1 -->
+<div class="page page1">
 
 <div class="left">
-
-<div class="name">Aditya<br>Maurya      </div>
+<div class="name">Aditya<br>Maurya</div>
 <div class="role">Java Backend Developer</div>
 
-<p><strong>Phone:</strong> 9919132374            </p>
+<p><strong>Phone:</strong> 9919132374</p>
 <p><strong>Email:</strong> aditya.mry01@gmail.com</p>
-<p><strong>Location:</strong> Borivali, Mumbai   </p>
+<p><strong>Location:</strong> Borivali, Mumbai</p>
 
 <div class="section-title">Skills</div>
 <ul>
-<li>Core Java / J2EE              </li>
-<li>Spring Boot & Spring MVC      </li>
-<li>Hibernate (ORM)               </li>
-<li>Swagger / OpenAPI             </li>
-<li>Postman                       </li>
-<li>Collection                    </li>
-<li>Multithreading                </li>
-<li>Java 8 Features               </li>
-<li>Stream API                    </li>
-<li>Maven                         </li>
-<li>Spring Security (JWT, RBAC)   </li>
-<li>Microservices Architecture    </li>
-<li>REST APIs                     </li>
-<li>MySQL & Redis                 </li>
-<li>AWS EC2 / S3                  </li>
-<li>JUnit & Mockito               </li>
-<li>Git & Gitlab                  </li>
-<li>Exception Handling            </li>
-<li>SQL Optimization              </li>
+<li>Core Java / J2EE</li>
+<li>Spring Boot & MVC</li>
+<li>Hibernate (ORM)</li>
+<li>Swagger / OpenAPI</li>
+<li>Collection & Multithreading</li>
+<li>Java 8 & Stream API</li>
+<li>Maven</li>
+<li>Spring Security (JWT, RBAC)</li>
+<li>Microservices</li>
+<li>REST APIs</li>
+<li>MySQL & Redis</li>
+<li>AWS EC2 / S3</li>
+<li>JUnit & Mockito</li>
+<li>Git & Gitlab</li>
+<li>Exception Handling</li>
 </ul>
 
 <div class="section-title">Education</div>
 <p><strong>BCA in Computer Science</strong></p>
-<p>2020 – 2023                             </p>
+<p>2020 – 2023</p>
 <p>Veer Bahadur Singh Purvanchal University</p>
 </div>
-  
+
 <div class="right">
 
 <h2>About Me</h2>
@@ -191,13 +189,11 @@ performance optimization and clean architecture.
 <div class="job-title">Fable Fintech <span class="date">Jul 2025 – Dec 2025</span></div>
 <p>Java Backend Developer</p>
 <ul>
-<li>Built secure and scalable REST APIs using Spring Boot and microservices to support banking workflows and customer transactions.             </li>
-<li>Integrated external services such as OTP, SMS, and email for secure account verification and transaction alerts.                            </li>
-<li>Implemented Spring Security with JWT and role-based access to safeguard sensitive financial data and user profiles.                         </li>
-<li>Managed high-volume banking data using Hibernate and Spring Data JPA, ensuring accuracy, consistency, and audit compliance.                 </li>
-<li>Deployed services on AWS EC2 and stored encrypted documents in S3, improving system availability, performance, and security.                </li>
-<li>Improved API reliability through JUnit and Mockito test coverage, ensuring stable banking operations and reducing defects in production.    </li>
-<li>Collaborated in Agile squads with Git-based version control to deliver banking features faster, aligned with compliance and audit standards.</li>
+<li>Developed secure RESTful APIs for banking modules improving reliability by 30%.</li>
+<li>Implemented Spring Security with JWT & RBAC reducing unauthorized access by 20%.</li>
+<li>Optimized MySQL queries reducing latency by 35%.</li>
+<li>Integrated OTP validation & AWS S3 secure storage.</li>
+<li>Implemented centralized logging & exception handling.</li>
 </ul>
 </div>
 
@@ -205,63 +201,53 @@ performance optimization and clean architecture.
 <div class="job-title">Happiest Minds Technologies <span class="date">Nov 2022 – Jul 2025</span></div>
 <p>Software Engineer</p>
 <ul>
-<li>Developed REST APIs using Spring Boot and microservices to enable real-time flight search, booking, payment, and cancellation features.    </li>
-<li>Integrated external communication services (SMS, email, OTP) for passenger verification, ticket updates, and booking confirmations.        </li>
-<li>Implemented Spring Security with JWT and RBAC to protect passenger records, booking data, and payment information.                         </li>
-<li>Managed large-scale reservation and passenger data using Hibernate and Spring Data JPA to ensure consistency and faster query performance. </li>
-<li>Deployed microservices on AWS EC2 and stored travel documents/tickets securely in S3 to enhance availability and disaster recovery.        </li>
-<li>Enhanced booking workflow reliability using JUnit and Mockito, reducing production issues and improving customer experience.               </li>
-<li>Collaborated in Agile teams using Git and Jira to release new travel features faster, aligned with airline business requirements.          </li>
-<li>Designed and documented REST endpoints using Swagger/OpenAPI, improving API usability for frontend, QA, and third-party consumers.         </li>
-<li>Performed API performance tuning and optimized SQL queries to reduce response time during peak flight booking traffic.                     </li>
+<li>Developed REST APIs for flight booking & payment systems.</li>
+<li>Integrated SMS, Email & OTP services.</li>
+<li>Improved performance with SQL tuning & optimization.</li>
+<li>Deployed microservices on AWS EC2.</li>
 </ul>
 </div>
+
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page page2">
 
 <h2>Project Demonstration</h2>
 
-<div class="project-section">
-
-<div class="project-left">
-<p><strong>Fable Fintech</strong></p>
-<p><strong>Project -</strong> Kotak Mahindra Bank</p>
-<p><strong>Technologies -</strong> Java 8, Spring Boot, Microservices, Hibernate JPA, MySQL, Redis, REST APIs, JWT, Logback</p>
-<p><strong>Project Description</strong></p>
+<p><strong>Fable Fintech – Kotak Mahindra Bank</strong></p>
+<p><strong>Technologies:</strong> Java 8, Spring Boot, Microservices, Hibernate JPA, MySQL, Redis, JWT, Logback</p>
 <p>
 Backend system for managing inward and outward banking transactions with secure validation,
-role-based access, automated notifications, and real-time status updates for fast and compliant processing.
+role-based access and real-time status updates.
 </p>
-</div>
 
-<div class="project-right">
-<p><strong>Responsibilities</strong></p>
+<p><strong>Responsibilities:</strong></p>
 <ul>
-<li>Developed secure RESTful APIs for core banking modules such as customer onboarding, loan processing, and account management, improving service response reliability by 30%.</li>
-<li>Implemented Spring Security with JWT + Role-Based Authorization, ensuring strict access control across sensitive banking workflows and reducing unauthorized access attempts by 20%.</li>
-<li>Optimized database queries and indexing in MySQL, decreasing high-volume transaction latency by 35% during peak banking hours.</li>
-<li>Integrated OTP-based verification and secure transaction validation, increasing authentication success rate and improving customer login experience.</li>
-<li>Built end-to-end workflows for KYC document upload & verification, integrating AWS S3 for storage and improving document retrieval speed by 40%.</li>
-<li>Collaborated with cross-functional banking teams to analyze requirements, convert them into technical tasks, and deliver modules following Agile methodology.</li>
-<li>Refactored legacy modules into cleaner service-layer architectures, improving maintainability and reducing production bug count by 25%.</li>
-<li>Implemented centralized exception handling and logging to improve debugging and reduce incident resolution time by 30%.</li>
+<li>Developed secure RESTful APIs for onboarding, loan processing & account management.</li>
+<li>Implemented JWT based role authorization.</li>
+<li>Optimized high volume transaction queries.</li>
+<li>Integrated AWS S3 for KYC document management.</li>
+<li>Reduced production bugs by 25% through refactoring.</li>
 </ul>
-</div>
 
-</div>
+<br><br>
 
-<div class="job">
 <p><strong>Flight Reservation System</strong></p>
-<p><strong>Technologies:</strong> Java 8, Spring Boot, Spring Security, REST API, MySQL, AWS</p>
+<p><strong>Technologies:</strong> Java 8, Spring Boot, Spring Security, MySQL, AWS</p>
 <p>
 Backend application supporting secure login, seat selection, booking workflows and automated notifications.
 </p>
-</div>
 
-</div>
+<ul>
+<li>Implemented authentication for booking & search modules.</li>
+<li>Validated 50+ APIs using Swagger & Postman.</li>
+<li>Configured CI/CD pipelines using Jenkins.</li>
+<li>Improved system uptime to 99.99%.</li>
+</ul>
 
 </div>
 
 </body>
 </html>
-
-
-
